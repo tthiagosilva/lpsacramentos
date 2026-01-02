@@ -6,22 +6,15 @@ interface LogoProps {
 }
 
 export const Logo: React.FC<LogoProps> = ({ className = "", isFooter = false }) => {
-  // Tenta primeiro o local, depois remoto
-  const localSrc = "./logo.png";
-  const remoteSrc = "https://static.wixstatic.com/media/893c83_222a088c42e24559a4563a4358a97576~mv2.png";
+  // CONFIGURAÇÃO DA LOGO:
+  // O componente buscará o arquivo 'logo.png' na raiz do site (pasta public).
+  // Certifique-se de adicionar o arquivo 'logo.png' na pasta 'public' do seu projeto.
+  const logoSrc = "logo.png";
   
-  const [imgSrc, setImgSrc] = useState(localSrc);
   const [hasError, setHasError] = useState(false);
 
-  const handleError = () => {
-    if (imgSrc === localSrc) {
-      setImgSrc(remoteSrc);
-    } else {
-      setHasError(true);
-    }
-  };
-
   if (hasError) {
+    // Fallback: Se a imagem não for encontrada, exibe o nome em texto
     return (
       <div className={`flex flex-col items-center justify-center font-serif font-bold leading-none ${className} ${isFooter ? 'text-white' : 'text-amber-500'}`}>
         <div className="text-4xl">CAJU</div>
@@ -32,10 +25,10 @@ export const Logo: React.FC<LogoProps> = ({ className = "", isFooter = false }) 
 
   return (
     <img 
-      src={imgSrc} 
+      src={logoSrc} 
       alt="Comunidade CAJU" 
       className={`${className} object-contain`}
-      onError={handleError}
+      onError={() => setHasError(true)}
     />
   );
 };
