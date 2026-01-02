@@ -43,7 +43,7 @@ export const Hero: React.FC = () => {
             <Clock className="w-10 h-10 text-amber-500" />
             <div className="text-left">
               <p className="text-[10px] text-amber-500/80 uppercase font-bold tracking-[0.2em]">Horário</p>
-              <p className="text-2xl font-bold font-sans">às 12:00h</p>
+              <p className="text-2xl font-bold font-sans">às 12h</p>
             </div>
           </div>
         </div>
