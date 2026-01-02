@@ -43,7 +43,7 @@ export const Hero: React.FC = () => {
             <Clock className="w-10 h-10 text-amber-500" />
             <div className="text-left">
               <p className="text-[10px] text-amber-500/80 uppercase font-bold tracking-[0.2em]">Horário</p>
-              <p className="text-2xl font-bold font-sans">às 12:00h</p>
+              <p className="text-2xl font-bold font-sans">às 12h</p>
             </div>
           </div>
         </div>
@@ -52,19 +52,7 @@ export const Hero: React.FC = () => {
           <div className="text-slate-400 text-sm md:text-lg flex flex-col items-center gap-2">
             <span>Inscrições exclusivamente através do portal</span>
             <span className="text-white font-semibold bg-white/10 px-3 py-1 rounded-md border border-white/5">www.comunidadecaju.com.br</span>
-          </div>
-          
-          <a 
-            href={CAJU_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white text-xl font-bold py-5 px-12 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_10px_40px_rgba(245,158,11,0.3)] overflow-hidden"
-          >
-            <span className="relative z-10">Acessar Portal de Inscrições</span>
-            <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform relative z-10" />
-            <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-          </a>
-        </div>
+         
       </div>
 
       {/* Scroll Indicator */}
