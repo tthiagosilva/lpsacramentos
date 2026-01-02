@@ -25,15 +25,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="flex flex-col items-center gap-8 w-full">
-            <a 
-                href={CAJU_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group w-full md:w-auto inline-flex items-center justify-center gap-3 bg-white text-slate-950 hover:bg-amber-50 text-xl font-bold py-5 px-14 rounded-full transition-all duration-300 shadow-2xl hover:shadow-amber-500/20 hover:-translate-y-1"
-            >
-                Ir para o Site Oficial
-                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-            </a>
+           
 
             <div className="flex flex-wrap justify-center gap-8 text-slate-500 text-sm font-medium uppercase tracking-widest">
                 <div className="flex items-center gap-2">
