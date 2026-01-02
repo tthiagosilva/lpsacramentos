@@ -9,7 +9,7 @@ export const Logo: React.FC<LogoProps> = ({ className = "", isFooter = false }) 
   // CONFIGURAÇÃO DA LOGO:
   // O componente buscará o arquivo 'logo.png' na raiz do site (pasta public).
   // Certifique-se de adicionar o arquivo 'logo.png' na pasta 'public' do seu projeto.
-  const logoSrc = "logo.png";
+  const logoSrc = "logo.PNG";
   
   const [hasError, setHasError] = useState(false);
 
