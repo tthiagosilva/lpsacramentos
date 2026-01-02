@@ -53,7 +53,7 @@ export const Hero: React.FC = () => {
             <span>Inscrições exclusivamente através do portal</span>
             <span className="text-white font-semibold bg-white/10 px-3 py-1 rounded-md border border-white/5">www.comunidadecaju.com.br</span>
           </div>
-        
+        </div>
       </div>
 
       {/* Scroll Indicator */}
