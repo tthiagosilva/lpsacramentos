@@ -54,7 +54,6 @@ export const Hero: React.FC = () => {
             <span className="text-white font-semibold bg-white/10 px-3 py-1 rounded-md border border-white/5">www.comunidadecaju.com.br</span>
           </div>
         </div>
-      </div>
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
